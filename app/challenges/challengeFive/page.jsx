@@ -12,6 +12,15 @@ function ChallengeFive() {
 
   useEffect(() => {
     const transMap = new Map();
+    data.forEach((item) => {
+      transMap.has(item.category)
+        ? transMap.set(item.category, [
+            ...transMap.get(item.category),
+            item.item,
+          ])
+        : transMap.set(item.category, [item.item]);
+    });
+    console.log(transMap);
   }, []);
 
   return (
