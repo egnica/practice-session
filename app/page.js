@@ -5,8 +5,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <h1>Test Practice Sessions</h1>
-      <Link href={"./challenges/challengeOne"}>Challenge One</Link>
+      <div style={{ textAlign: "center" }}>
+        <h1>Test Practice Sessions</h1>
+        <Link href={"./challenges/challengeOne"}>Challenge One</Link>
+        <br />
+        <Link href={"./challenges/challengeTwo"}>Challenge Two</Link>
+      </div>
     </div>
   );
 }
