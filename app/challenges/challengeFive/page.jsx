@@ -1,7 +1,5 @@
 "use client";
-import React from "react";
-
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 function ChallengeFive() {
   const data = [
@@ -10,24 +8,26 @@ function ChallengeFive() {
     { id: 3, category: "veg", item: "carrot" },
   ];
 
+  const [transMap, setTransMap] = useState(new Map());
+
   useEffect(() => {
-    const transMap = new Map();
+    const map = new Map();
     data.forEach((item) => {
-      transMap.has(item.category)
-        ? transMap.set(item.category, [
-            ...transMap.get(item.category),
-            item.item,
-          ])
-        : transMap.set(item.category, [item.item]);
+      map.has(item.category)
+        ? map.set(item.category, [...map.get(item.category), item.item])
+        : map.set(item.category, [item.item]);
     });
-    console.log(transMap);
+    setTransMap(map);
   }, []);
 
   return (
-    <div>
-      ChallengeFive
+    <div style={{ padding: "30px" }}>
       <h2>Object Transformation</h2>
-      <p></p>
+      {Array.from(transMap.entries()).map(([key, value]) => (
+        <div key={key}>
+          <strong>{key}</strong>: {value.join(", ")}
+        </div>
+      ))}
     </div>
   );
 }
