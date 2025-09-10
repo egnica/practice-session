@@ -8,6 +8,7 @@ function ChallengeFive() {
     { id: 3, category: "veg", item: "carrot" },
   ];
 
+  // Using map instead of an object
   const [transMap, setTransMap] = useState(new Map());
 
   useEffect(() => {

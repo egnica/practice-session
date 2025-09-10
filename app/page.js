@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div>
       <div style={{ textAlign: "center" }}>
         <h1>Test Practice Sessions</h1>
         <Link href={"./challenges/challengeOne"}>Challenge One</Link>
@@ -14,6 +14,12 @@ export default function Home() {
         <Link href={"./challenges/challengeThree"}>Challenge Three</Link>
         <br />
         <Link href={"./challenges/challengeFour"}>Challenge Four</Link>
+        <br />
+        <Link href={"./challenges/challengeFive"}>Challenge Five</Link>
+        <br />
+        <Link href={"./challenges/challengeSix"}>Challenge Six</Link>
+        <br />
+        <Link href={"./challenges/challengeSeven"}>Challenge Seven</Link>
       </div>
     </div>
   );
