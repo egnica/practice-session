@@ -2,9 +2,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 function challengeNine() {
-  const [counter, setCounter] = useState({ min: 0, sec: 10 });
+  const [counter, setCounter] = useState({ min: 11, sec: 0 });
   const [timerControl, setTimerControl] = useState("stop");
-
 
   useEffect(() => {
     if (timerControl == "start") {
