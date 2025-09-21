@@ -46,6 +46,28 @@ export default function Home() {
         <Link href={"./challenges/challengeEighteen"}>Challenge Eighteen</Link>
         <br />
         <Link href={"./challenges/challengeNineteen"}>Challenge Nineteen</Link>
+        <br />
+        <Link href={"./challenges/challengeTwenty"}>Challenge Twenty</Link>
+        <br />
+        <Link href={"./challenges/challengeTwentyOne"}>
+          Challenge Twenty One
+        </Link>
+        <br />
+        <Link href={"./challenges/challengeTwentyTwo"}>
+          Challenge Twenty Two
+        </Link>
+        <br />
+        <Link href={"./challenges/challengeTwentyThree"}>
+          Challenge Twenty Three
+        </Link>
+        <br />
+        <Link href={"./challenges/challengeTwentyFour"}>
+          Challenge Twenty Four
+        </Link>
+        <br />
+        <Link href={"./challenges/challengeTwentyFive"}>
+          Challenge Twenty Five
+        </Link>
       </div>
     </div>
   );
