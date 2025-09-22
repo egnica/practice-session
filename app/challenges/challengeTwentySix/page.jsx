@@ -5,10 +5,7 @@ import { useState, useEffect } from "react";
 function ChallengeTwentySix() {
   const num = [4, 1, 1, 1, 2, 2, 3, 3, 3, 3, 3];
   const k = 3;
-
   const result = {};
-
-  const [selector, setSelector] = useState([]);
 
   const numCheck = () => {
     num.forEach((item) => {
@@ -20,7 +17,7 @@ function ChallengeTwentySix() {
   };
   numCheck();
   const topK = Object.entries(result)
-    .sort((a, b) => b[1] - a[1]) // sort by count desc
+    .sort((a, b) => b[1] - a[1])
     .slice(0, k);
   console.log(topK);
 
