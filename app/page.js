@@ -68,6 +68,10 @@ export default function Home() {
         <Link href={"./challenges/challengeTwentyFive"}>
           Challenge Twenty Five
         </Link>
+        <br />
+        <Link href={"./challenges/challengeTwentySix"}>
+          Challenge Twenty Six
+        </Link>
       </div>
     </div>
   );
