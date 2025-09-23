@@ -23,6 +23,9 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Link href={"/"}>Home</Link>
         {children}
+        <footer>
+          <Link href={"./series-one"}>Series One</Link>
+        </footer>
       </body>
     </html>
   );

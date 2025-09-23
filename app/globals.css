@@ -23,6 +23,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+footer {
+  position: fixed; /* Fixes the footer to the viewport */
+  bottom: 0; /* Anchors it to the bottom */
+  left: 0; /* Anchors it to the left */
+  width: 100%; /* Spans the full width */
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000; /* Ensures it stays on top of other content */
+}
 
 * {
   box-sizing: border-box;
