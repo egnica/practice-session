@@ -8,6 +8,8 @@ export default function Home() {
       <div style={{ textAlign: "center" }}>
         <h1>Test Practice Sessions</h1>
         <Link href={"./challenges-two/001"}>Challenge 001</Link>
+        <br />
+        <Link href={"./challenges-two/002"}>Challenge 002</Link>
       </div>
     </div>
   );
